@@ -6,6 +6,89 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+    function func1(a, b) 
+    {
+    return Math.min(a, b);
+    }
+
+    function func2(a, b) 
+    {
+    return Math.pow(a, b);
+    }
+
+
+    function func3(a, b, operator) 
+    {
+    switch (operator)
+       {
+        case '+':
+            return a + b;
+        case '-':
+            return a - b;
+        case '*':
+            return a * b;
+        case '/':
+            return a / b;
+       }
+    }
+
+    function func4(number) 
+    {
+       for (let i = 2; i <= Math.sqrt(number); i++)
+        {
+        if (number % i == 0) 
+            {
+            return false;
+            }
+        }
+    return true;
+    }
+
+    function func5(number) {
+    for (let i = 1; i <= 10; i++) {
+       alert(number+"*" +i+"=" +number * i);
+    }
+}
+
+function func6(a, b) {
+    return a - Math.floor(a / b) * b;
+}
+
+
+function func7()
+{
+    let numbers = [1, 2, 3, 4, 5]; 
+
+  if (numbers.length >= 1 && numbers.length <= 5) 
+  {
+    let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+
+    alert("Сумма=", sum);
+  } 
+   else
+   {
+    alert("Не то количество ");
+   }
+
+}
+
+function func8(a, b) {
+    return Math.max(a, b);
+}
+
+function func9(x, y, even) {
+    for (let i = x; i <= y; i++) {
+        if ((i % 2 === 0 && even) || (i % 2 !== 0 && !even)) {
+            alert(i);
+        }
+    }
+}
+
+    </script>
 </body>
 </html>
