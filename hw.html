@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//     function func1(a, b) {
+//         if (a < b) {
+//             return -1;
+//         } else if (a > b) {
+//             return 1;
+//         } else {
+//             return 0;
+//         }
+//     }
+//     let rez1 =     func1(10, 5);
+// alert(rez1);
+// let rez2 =     func1(5, 10);
+// alert(rez2);
+// let rez3 =     func1(8, 8);
+// alert(rez3);
+
+// function func2(n) {
+//     if (n === 0 || n === 1) {
+//         return 1;
+//     } else {
+//         return n * func2(n - 1);
+//     }
+// }
+
+
+// let rez = func2(5);
+// alert(rez); 
+
+
+
+// function func3(digit1, digit2, digit3) {
+   
+//     var combinedNumber = digit1 * 100 + digit2 * 10 + digit3;
+
+//     return combinedNumber;
+// }
+
+
+// let rez= func3(1, 4, 9);
+// alert(rez);// 149
+
+
+
+// function func4(length, width) {
+//     if (width === undefined) {
+//         return length * length;
+//     } else {
+//         return length * width;
+//     }
+// }
+
+// let rez1 = func4(5, 8);
+// alert(rez1);
+
+// let rez2= func4(4);
+// alert(rez2);
+
+
+// function func5(number) {
+//     if (number <= 0) {
+//         return false; 
+//      }
+
+//     let sum = 0;
+
+//     for (let i = 1; i < number; i++) {
+//         if (number % i === 0) {
+//             sum += i;
+//         }
+//     }
+
+//     return sum === number;
+// }
+
+// let number = 28;
+// if (func5(number)) {
+//     alert(number + "  совершенное число.");
+// } else {
+//     alert(number + " не  совершенное число.");
+// }
+
+
+
+
+
+// function func6(min, max) {
+//     if (min <= 0 || min > max) {
+//         return;
+//     }
+
+//     alert("совершенное число в диапазоне от "+min+"до" +max);
+//     for (let i = min; i <= max; i++) {
+//         if (func5(i)) {
+//             alert(i);
+//         }
+//     }
+// }
+
+
+// func6(1, 100);
+
+
+
+
+
+
+
+// function func7(hours, minutes, seconds) 
+//    {
+//       if (hours < 0 || hours > 23 || minutes < 0 || minutes > 59 || seconds < 0 || seconds > 59) 
+//         {
+//         alert("Не то время");
+//         return;
+//         }
+
+
+//  let addZero = function(value) 
+//    {
+//         if (value < 10) {
+//            return "0" + value;
+//         } else {
+//            return "" + value;
+//         }
+//     };
+//  let time = addZero(hours) + ":" + addZero(minutes) + ":" + addZero(seconds);
+
+//  alert(time);
+// }
+
+// func7(12, 34, 56); // 12:34:56
+// func7(8, 5, 2);    // 08:05:02
+
+
+// function func8(hours, minutes, seconds) {
+//     if (hours < 0 || hours > 23 || minutes < 0 || minutes > 59 || seconds < 0 || seconds > 59) {
+//         alert("Не то вемя");
+//         return;
+//     }
+
+//     let allSeconds = hours * 3600 + minutes * 60 + seconds;
+
+//     return allSeconds;
+// }
+
+// let seconds = func8(2, 30, 45);
+// alert("Время в секундах:"+ seconds);
+
+
+
+
+// function func9(seconds) {
+//     if (seconds < 0) {
+//         alert("Не то количество");
+//         return;
+//     }
+
+
+//     let hours = Math.floor(seconds / 3600);
+//     let minutes = Math.floor((seconds % 3600) / 60);
+//      let seconds = seconds % 60;
+
+
+
+//     let time = hours+":"+minutes+":"+seconds;
+
+   
+//     return time;
+// }
+
+// let timeString = func9(9025);
+// alert("Время в формате чч:мм:сс:"+ timeString);
+
+
+
+
+
+// function func10(hours1, minutes1, seconds1, hours2, minutes2, seconds2) {
+//     let totalSeconds1 = func8(hours1, minutes1, seconds1);
+//    let totalSeconds2 = func8(hours2, minutes2, seconds2);
+
+//    let differenceInSeconds = Math.abs(totalSeconds1 - totalSeconds2);
+
+//     let timeDifference = func9(differenceInSeconds);
+
+//     return timeDifference;
+// }
+
+
+// let timeDifference = func10(12, 30, 15, 9, 45, 20);
+// alert("Разница между датами: " + timeDifference);
+
+    </script>
+</body>
+</html>
